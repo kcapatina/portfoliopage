@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Merchandise</title>
+       <link href="https://fonts.googleapis.com/css2?family=Modak&display=swap" rel="stylesheet">
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            } @font-face {
+                font-family: Candara;
+                src: url("Candara.ttf");
+            } h1 {
+                font: 48pt/1.4em Modak;
+                text-align: center;
+                color: navajowhite;
+                text-shadow: 1px 2px 3px black;
+                margin: 24px 0;
+            } #textbox {
+                width: 1024px;
+                height: 928px;
+                margin: 0 auto;
+                background: aliceblue;
+                box-shadow: 2px 3px 6px gainsboro;
+                border: 1px solid gainsboro;
+                display: flex;
+                flex-direction: column-reverse;
+                flex-wrap: wrap-reverse;
+                align-content: space-evenly;
+                justify-content: center;
+            } figure {
+                margin: 24px;
+            } img, .zoom {
+                width: 200px;
+                height: 200px;
+                border: 1px solid pink;
+                box-shadow: 2px 3px 6px pink;
+                transition: transform 0.5s;
+            } figcaption {
+                font: 12pt/1.4em Candara;
+                margin-top: 3px;
+                color: navajowhite;
+                text-shadow: 1px 2px 3px black;
+
+            } .zoom {
+                background-size: 100%;
+                background-position: center;
+            } img:hover {
+                filter: opacity(0.50);
+                // transform: scale(1.03);
+                transition: transform 0.5s;
+            } .zoom:hover {
+                background-size: 110%;
+                transition: background-size 0.5s;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Merchandise</h1>
+        <div id="textbox">
+            <!-- Photo -->
+            
+            <figure>
+                <a href="shotaro.jpg">
+                    <img src="thumb-shotaro.jpg" />
+                </a>
+                <figcaption>"Riizko" - Shotaro Plush</figcaption>
+            </figure>
+            <figure>
+            <a href="anton.jpg">
+            <img src="thumb-anton.png" />
+            </a>
+            <figcaption>"Meongnyong-ie" - Anton Plush </figcaption>
+            </figure>
+            <figure>
+                <a href="sohee.jpg">
+                    <img src="thumb-sohee.jpg" />
+                </a>
+                <figcaption>"Ddolbyeong" - Sohee Plush</figcaption>
+            </figure> 
+            <figure>
+                <a href="wonbin.jpg">
+                    <img src="thumb-wonbin.jpg" />
+                </a>
+                <figcaption>"ToNyangdeok" - Wonbin Plush</figcaption>
+            </figure>
+            <figure>
+                <a href="sungchan.jpg">
+                    <img src="thumb-sungchan.jpg" />
+                </a>
+                <figcaption>"Ohrakbam" - Sungchan Plush</figcaption>
+            </figure>
+              <figure>
+                <a href="eunseok.jpg">
+                    <img src="thumb-eunseok.jpg" />
+                </a>
+                <figcaption>"Song Yongdol-ie" Eunseok Plush</figcaption>
+            </figure>
+        </div>
+    </body>
+</html>
